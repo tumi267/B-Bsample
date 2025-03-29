@@ -24,7 +24,7 @@ export default function RoomCards() {
           transition={{ duration: 0.5 }}
         >
           <Link href={`/room/${room.name}`} className={styles.cardLink}>
-            <h3>{room.name}</h3>
+            <h3 className={styles.special_item}>{room.name}</h3>
             <p>{room.description}</p>
             <button className={styles.button}>View Room</button>
           </Link>

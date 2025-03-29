@@ -11,7 +11,7 @@ function page() {
   return (
     <div className={styles.contain}>
       
-      <h2>Dining</h2>
+      <h2 className={styles.special_item}>Dining</h2>
 
     <Hero
     url='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGluaW5nfGVufDB8fDB8fHww'/>
@@ -23,21 +23,21 @@ function page() {
 
     <BentoDinning/>
     
-    <h2>Chef's Specials</h2>
+    <h2 className={styles.special_item}>Chef's Specials</h2>
   <div class="special-item">
-    <h3>Grilled Lobster Tail</h3>
+    <h3 className={styles.special_item}>Grilled Lobster Tail</h3>
     <p>A succulent lobster tail, grilled to perfection and served with garlic butter, seasonal vegetables, and your choice of side.</p>
   </div>
   <div class="special-item">
-    <h3>Pan-Seared Duck Breast</h3>
+    <h3 className={styles.special_item}>Pan-Seared Duck Breast</h3>
     <p>Tender duck breast seared to a perfect crisp, accompanied by a rich berry reduction, mashed potatoes, and roasted root vegetables.</p>
   </div>
   <div class="special-item">
-    <h3>Truffle Mushroom Risotto</h3>
+    <h3 className={styles.special_item}>Truffle Mushroom Risotto</h3>
     <p>A creamy risotto with wild mushrooms, finished with a touch of truffle oil, parmesan, and fresh herbs.</p>
   </div>
   <div class="special-item">
-    <h3>Seared Ahi Tuna</h3>
+    <h3 className={styles.special_item}>Seared Ahi Tuna</h3>
     <p>Fresh Ahi tuna seared on the outside with a tender center, served with a soy-ginger glaze, jasmine rice, and sautéed greens.</p>
   </div>
     </div>

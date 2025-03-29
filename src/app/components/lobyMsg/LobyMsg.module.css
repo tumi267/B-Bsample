@@ -7,6 +7,10 @@
     text-align: center;
     margin: 0% auto;
 }
+.heading{
+    font-size: 50px;
+    color: #ab956c;
+}
 .message{
     font-weight: 300;
 }

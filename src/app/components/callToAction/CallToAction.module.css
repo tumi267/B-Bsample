@@ -4,12 +4,12 @@
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    background-color: #3498db; /* Base button color */
+    background-color: #ab956c; /* Base button color */
     border: none;
     border-radius: 12px;
     cursor: pointer;
     outline: none;
-    box-shadow: 0 4px 41px #2980b9, -6px 20px 47px rgb(51, 117, 166); /* Stronger shadow for raised effect */
+    box-shadow: 0 4px 41px rgba(171, 149, 108, 0.6), -6px 20px 47px rgba(115, 98, 70, 0.7); /* Adjusted to brown tones */
     transition: all 0.2s ease;
     transform: translateY(-5px); /* Start in a raised position */
 }
@@ -18,62 +18,86 @@
 .btn::after {
     content: '';
     position: absolute;
-    bottom: -15px; /* Position the shadow below the button */
+    bottom: -15px;
     left: 50%;
-    width: 90%; /* Make the shadow wider than the button */
-    height: 12px; /* Height of the shadow */
-    background-color: rgba(23, 78, 115, 0.6); /* Darker shadow color with transparency */
-    border-radius: 50%; /* Make the shadow round */
-    filter: blur(8px); /* Blur the shadow for a softer effect */
-    transform: translateX(-50%); /* Center the shadow horizontally */
-    z-index: -1; /* Place the shadow behind the button */
+    width: 90%;
+    height: 12px;
+    background-color: rgba(115, 98, 70, 0.6); /* Soft brown shadow */
+    border-radius: 50%;
+    filter: blur(8px);
+    transform: translateX(-50%);
+    z-index: -1;
     transition: all 0.2s ease;
 }
 
 .btn::after {
-    width: 70%; /* Make the second shadow narrower */
-    height: 6px; /* Thinner shadow */
-    background-color: rgba(16, 56, 83, 0.5); /* Even darker shadow color */
-    filter: blur(5px); /* Less blur for a sharper effect */
-    bottom: -20px; /* Position the second shadow further below */
+    width: 70%;
+    height: 6px;
+    background-color: rgba(95, 80, 58, 0.5); /* Darker brown shadow */
+    filter: blur(5px);
+    bottom: -20px;
 }
 
 .btn:hover {
-    transform: translateY(0); /* Move the button down to its original position */
-    box-shadow: 0 2px 21px #2980b9, -6px 10px 27px rgb(51, 117, 166); /* Reduce shadow for pressed effect */
+    transform: translateY(0);
+    box-shadow: 0 2px 21px rgba(171, 149, 108, 0.7), -6px 10px 27px rgba(115, 98, 70, 0.8);
 }
 
 .btn:hover::before,
 .btn:hover::after {
-    width: 80%; /* Narrower shadow on hover */
-    height: 10px; /* Thinner shadow */
-    bottom: -12px; /* Adjust the position */
-    background-color: rgba(23, 78, 115, 0.8); /* Darker shadow on hover */
+    width: 80%;
+    height: 10px;
+    bottom: -12px;
+    background-color: rgba(95, 80, 58, 0.8);
 }
 
 .btn:hover::after {
-    width: 60%; /* Narrower second shadow on hover */
-    height: 5px; /* Thinner second shadow */
-    bottom: -16px; /* Adjust the position */
-    background-color: rgba(16, 56, 83, 0.7); /* Even darker second shadow on hover */
+    width: 60%;
+    height: 5px;
+    bottom: -16px;
+    background-color: rgba(75, 63, 47, 0.7);
 }
 
 .btn:active {
-    transform: translateY(2px); /* Move the button down further on click */
-    box-shadow: 0 1px 11px #2980b9, -6px 5px 17px rgb(51, 117, 166); /* Further reduce shadow on click */
+    transform: translateY(2px);
+    box-shadow: 0 1px 11px rgba(171, 149, 108, 0.5), -6px 5px 17px rgba(115, 98, 70, 0.6);
 }
 
 .btn:active::before,
 .btn:active::after {
-    width: 70%; /* Narrower shadow on click */
-    height: 8px; /* Thinner shadow */
-    bottom: -10px; /* Adjust the position */
-    background-color: rgba(23, 78, 115, 0.9); /* Darker shadow on click */
+    width: 70%;
+    height: 8px;
+    bottom: -10px;
+    background-color: rgba(95, 80, 58, 0.9);
 }
 
 .btn:active::after {
-    width: 50%; /* Narrower second shadow on click */
-    height: 4px; /* Thinner second shadow */
-    bottom: -14px; /* Adjust the position */
-    background-color: rgba(16, 56, 83, 0.8); /* Even darker second shadow on click */
+    width: 50%;
+    height: 4px;
+    bottom: -14px;
+    background-color: rgba(75, 63, 47, 0.8);
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    backdrop-filter: blur(10px); /* Blurred background effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1001;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }

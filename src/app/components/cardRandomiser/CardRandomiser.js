@@ -8,8 +8,8 @@ import Link from "next/link";
 const cardData = [
   { title: "Accommodation", content: "Find the best places to stay." },
   { title: "Dining", content: "Explore amazing dining options." },
-  { title: "Location", content: "Discover beautiful locations." },
-  { title: "To-Do", content: "Things to do during your visit." },
+  { title: "Contact", content: "Discover beautiful locations." },
+  { title: "ToDo", content: "Things to do during your visit." },
   { title: "Offers", content: "Check out exclusive offers." },
   // Add more items if needed
 ];

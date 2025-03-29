@@ -7,9 +7,9 @@
     position: sticky;
     top: 0;
     left: 0;
-    height: 112px;
+    height: 60px;
     border: 1px solid gray;
-    background-color: #FFFFFF;
+    background-color: #222;
     z-index: 10;
 }
 .list{
@@ -24,3 +24,46 @@ height: 80px;
 margin-left: 5%;
 align-items: center;
 }
+.links{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.links_btn{
+    background-color: #ab956c;
+    color: #ffffff;
+}
+/* Modal Overlay */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure it's above other content */
+    backdrop-filter: blur(5px); /* Apply background blur */
+  }
+  
+  /* Modal Content */
+  .modalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Animation for the modal */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

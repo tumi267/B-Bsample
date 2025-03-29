@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import styles from './BookingSideMenu.module.css';
+import styles from '../bookingSidemenu/BookingSideMenu.module.css';
 
-export default function BookingSideMenu() {
+export default function Bookingmodel() {
   const [checkIn, setCheckIn] = useState(null);
   const [checkOut, setCheckOut] = useState(null);
   const [availability, setAvailability] = useState(true); // Assume available by default
@@ -40,6 +40,7 @@ export default function BookingSideMenu() {
   return (
     <div className={styles.bookingContainer}>
       <div className={styles.stripContainer}>
+      
         <label className={styles.label}>Check-In:</label>
         <input
           type="date"
@@ -83,21 +84,7 @@ export default function BookingSideMenu() {
           </div>
         </motion.div>
       )}
-      <h3>Details</h3>
-  <ul>
-    <li><strong>Sleeps:</strong> 2</li>
-    <li><strong>Number of Units:</strong> 10</li>
-    <li><strong>Size:</strong> 50 m²</li>
-  </ul>
-  
-  <h3>Amenities</h3>
-  <ul>
-    <li>Wifi</li>
-    <li>TV</li>
-    <li>Coffee and Tea</li>
-    <li>Security Safe</li>
-    <li>Ceiling fan</li>
-  </ul>
+ 
     </div>
   );
 }
