@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation'
 import BentoRoom from '@/app/components/bento/BentoRoom'
 import styles from './room.module.css'
 import BookingSideMenu from '@/app/components/bookingSidemenu/BookingSideMenu'
-function page() {
+function Room() {
   const param=useParams()
   const {id}=param
   const cleanname=id.replace(/%20/g, ' ');
@@ -32,4 +32,4 @@ function page() {
   )
 }
 
-export default page
+export default Room
