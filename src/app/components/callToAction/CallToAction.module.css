@@ -1,0 +1,79 @@
+.btn {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db; /* Base button color */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 41px #2980b9, -6px 20px 47px rgb(51, 117, 166); /* Stronger shadow for raised effect */
+    transition: all 0.2s ease;
+    transform: translateY(-5px); /* Start in a raised position */
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: -15px; /* Position the shadow below the button */
+    left: 50%;
+    width: 90%; /* Make the shadow wider than the button */
+    height: 12px; /* Height of the shadow */
+    background-color: rgba(23, 78, 115, 0.6); /* Darker shadow color with transparency */
+    border-radius: 50%; /* Make the shadow round */
+    filter: blur(8px); /* Blur the shadow for a softer effect */
+    transform: translateX(-50%); /* Center the shadow horizontally */
+    z-index: -1; /* Place the shadow behind the button */
+    transition: all 0.2s ease;
+}
+
+.btn::after {
+    width: 70%; /* Make the second shadow narrower */
+    height: 6px; /* Thinner shadow */
+    background-color: rgba(16, 56, 83, 0.5); /* Even darker shadow color */
+    filter: blur(5px); /* Less blur for a sharper effect */
+    bottom: -20px; /* Position the second shadow further below */
+}
+
+.btn:hover {
+    transform: translateY(0); /* Move the button down to its original position */
+    box-shadow: 0 2px 21px #2980b9, -6px 10px 27px rgb(51, 117, 166); /* Reduce shadow for pressed effect */
+}
+
+.btn:hover::before,
+.btn:hover::after {
+    width: 80%; /* Narrower shadow on hover */
+    height: 10px; /* Thinner shadow */
+    bottom: -12px; /* Adjust the position */
+    background-color: rgba(23, 78, 115, 0.8); /* Darker shadow on hover */
+}
+
+.btn:hover::after {
+    width: 60%; /* Narrower second shadow on hover */
+    height: 5px; /* Thinner second shadow */
+    bottom: -16px; /* Adjust the position */
+    background-color: rgba(16, 56, 83, 0.7); /* Even darker second shadow on hover */
+}
+
+.btn:active {
+    transform: translateY(2px); /* Move the button down further on click */
+    box-shadow: 0 1px 11px #2980b9, -6px 5px 17px rgb(51, 117, 166); /* Further reduce shadow on click */
+}
+
+.btn:active::before,
+.btn:active::after {
+    width: 70%; /* Narrower shadow on click */
+    height: 8px; /* Thinner shadow */
+    bottom: -10px; /* Adjust the position */
+    background-color: rgba(23, 78, 115, 0.9); /* Darker shadow on click */
+}
+
+.btn:active::after {
+    width: 50%; /* Narrower second shadow on click */
+    height: 4px; /* Thinner second shadow */
+    bottom: -14px; /* Adjust the position */
+    background-color: rgba(16, 56, 83, 0.8); /* Even darker second shadow on click */
+}

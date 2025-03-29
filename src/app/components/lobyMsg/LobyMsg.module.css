@@ -1,0 +1,12 @@
+.contain{
+    width: 80%;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0% auto;
+}
+.message{
+    font-weight: 300;
+}

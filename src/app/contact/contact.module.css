@@ -1,0 +1,15 @@
+.contain{
+    position: relative;
+    display: grid;
+  
+    width: 75%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2em;
+    text-align: center;
+}
+.map{
+    width: 100%;
+    height: 600px;
+}

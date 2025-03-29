@@ -1,0 +1,9 @@
+.hero_image{
+    position: relative;
+    height: 337px;
+    width: 80%;
+    max-width: 1080px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,18 @@
+.contain{
+    margin: 48px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1080px;
+    width: 80%;
+
+    align-items: center;
+    gap: 2em;
+}
+.image_contain{
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+.hero_image_content {
+    object-fit: cover;  /* Ensures the image covers the entire div */
+  }

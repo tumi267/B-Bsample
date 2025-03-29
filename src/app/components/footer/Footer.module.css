@@ -1,0 +1,20 @@
+.footer{
+    background-color: black;
+    color: #FFFFFF;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1080px;
+    margin: 48px auto;
+}
+.discription{
+
+}
+.links{
+
+}
+.contact{
+    
+}
