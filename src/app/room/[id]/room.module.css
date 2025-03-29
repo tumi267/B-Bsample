@@ -11,3 +11,8 @@
 .special_item{
     color: #ab956c;
 }
+@media (max-width: 768px) {
+    .contain {
+      grid-template-columns: 1fr; /* Stack the columns on mobile */
+    }
+  }
